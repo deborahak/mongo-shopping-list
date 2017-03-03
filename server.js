@@ -55,13 +55,13 @@ app.post('/items', function(req, res) {
 
 
 app.put('/items/:id', function(req, res) {
-    Item.findOneAndUpdate({ _id: req.params.id}, { name: req.body.name }, function(err, item){
+    Item.findOneAndUpdate({ _id: req.params.id}, { name: req.body.name }, {new:true}, function(err, item){
         if (err){
             return res.status(500).json({
                 message: 'Internal Server Error'
             });
         }
-        res.json();
+        res.json(item);
     });
 });
 
