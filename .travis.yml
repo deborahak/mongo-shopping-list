@@ -8,3 +8,10 @@ addons:
     - mongodb-3.2-precise
     packages:
     - mongodb-org-server
+deploy:
+  provider: heroku
+  api_key:
+    secure: JHkz7zAEKXnAPU38ZOYD69VmbnqutpZPeO/D5moxZhAa7VxlUK1YgXWWIsTstMsFVYzvayyxwgp0/WR1pOxakzzJzCRQkhF8zY0DRQBUPOiEOPYDW+YwP6dLK/0D7QrgHL4QgoP22ZXRw/YYkANZB2Ao2BRpF88ii0qIg09OkKWud4SS1E9wRHxLYQG75bPBq+u1FMME6g4+nc4RjfJrzNXzFMjKYSqkU8BpuiqV5JfBwSKcR/H2hEKtSYFg2H5+LDOs3awKGG44oofSyKb4MNDNmF0i/m2+vsyucU29X7n0j4miBgyopYPg6IQgARzA0qZQpFoWm1DcHkAY8YhJ6pVTwwBtIvG8r6OCUKGojgaSPp6wbkYP2jprjRm3OXPHxi07x2T6lgvlOYshP5wiehIyiKiEm7jTzyHIFpDopK4mMI7l53Cf5fkQsla3Hlsb2F5MAnmkkqFjeZm1dPeqVtNK2jTzmURwSxS+y/m2e1YrlGaufEByf6m/Kwa8kdeEf2b/D/FNloE6ltX0pl3doOS1nrGGJkBSqGmKYZO52LPZ+gzDesqtfeIuSJvvjfjDOvi14dMFA+GpEMB05ipy+xQrgxKejmohSYJwecY89vgBLFw02tg4sVQftk0R+xRKQFd5hIuQ0RWLa5MEV3vCZTekL/XJroxgTckKcENE7es=
+  app: warm-dawn-16349
+  on:
+    repo: deborahak/mongo-shopping-list
